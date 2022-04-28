@@ -1,0 +1,248 @@
+@mixin defaultBody {
+  font-family: "Open Sans";
+  line-height: 24px;
+  font-weight: 400;
+}
+@mixin flexibleContainer {
+  display: flex;
+  align-items: flex-start;
+  float: left;
+  position: relative;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+header {
+  top: 0px;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  float: left;
+  display: block;
+}
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.main-menu {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  z-index: 900;
+  background-color: #202020;
+  margin-top: 0;
+  box-sizing: border-box;
+  line-height: 24px;
+  > li.menu-item {
+    display: inline-block;
+    list-style: none;
+  }
+  > li > a {
+    color: #ffff;
+    padding: 28px 10px;
+  }
+  li a {
+    display: block;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+
+    letter-spacing: 1px;
+  }
+}
+body {
+  @include defaultBody();
+  color: #555555;
+  font-size: 15px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.24s ease-in-out;
+  -moz-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+}
+nav {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.header-center {
+  background-color: #202020;
+}
+#site-navigation {
+  ul {
+    display: inline-block;
+  }
+  li {
+    float: left;
+  }
+}
+.header-logo-container {
+  width: 13%;
+  display: inline-block;
+}
+.header-logo {
+  margin: 0 15px;
+  padding-top: 5px;
+  display: block;
+}
+a:any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+body {
+  .backimg-container {
+    z-index: 0;
+    width: 100%;
+    height: 20em;
+    visibility: inherit;
+    > .backimg {
+      background-repeat: no-repeat;
+      background-image: url(../images/background-second.jpeg);
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      visibility: inherit;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        color: white;
+        font-size: 32px;
+        font-family: "Oswald";
+        font-weight: 400;
+        margin-left: 2vw;
+        margin-bottom: 0;
+        + p {
+          color: white;
+          font-size: 16px;
+          font-family: "Oswald";
+          margin-left: 2vw;
+          margin-top: 0;
+          margin-bottom: 0;
+          padding-top: 0.8em;
+        }
+      }
+    }
+  }
+}
+.aboutUs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .time-table {
+    background-color: #d19f68;
+
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: baseline;
+    flex-direction: column;
+    margin-top: 7vw;
+    .button-container {
+      align-self: center;
+      margin: 1vw 0.4em 1vw 0;
+
+      div {
+        padding: 0.4em;
+        background-color: #202020;
+        color: #fff;
+        font-family: "Oswald";
+        font-size: 24px;
+      }
+    }
+    .header-time-table {
+      h4 {
+        color: #202020;
+        font-family: "Oswald";
+        font-size: 32px;
+      }
+    }
+
+    .date-list {
+      margin: 0;
+      width: 100%;
+
+      ul {
+        list-style: none;
+        padding: 0 2vw;
+
+        li {
+          border-bottom: 3px dotted #fff;
+          padding: 1vw 0;
+          text-align: right;
+          color: #fff;
+          font-size: 32px;
+          font-family: "Oswald";
+          &:last-child {
+            border: 0;
+          }
+          > span {
+            float: left;
+          }
+        }
+      }
+    }
+  }
+  div {
+    margin: 0 7vw;
+  }
+
+  .text-wrapper {
+    margin: 0;
+    padding: 7vw 0 7vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
+    width: 30%;
+    p {
+      word-break: normal;
+      font-size: 15px;
+      padding-top: 3vh;
+      margin: 0;
+    }
+    > h4 {
+      font-size: 35px;
+      font-family: "Oswald";
+      color: #d19f68;
+      margin: 0;
+      padding: 0;
+      + h4 {
+        padding: 39px 0 49px;
+        font-size: 75px;
+        color: #202020;
+        word-break: normal;
+        text-transform: uppercase;
+        + h4 {
+          padding: 0;
+          font-size: 75px;
+          color: #202020;
+          word-break: normal;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
