@@ -132,16 +132,80 @@ body {
         font-size: 32px;
         font-family: "Oswald";
         font-weight: 400;
-        margin-left: 2vw;
+        margin-left: 0;
         margin-bottom: 0;
         + p {
           color: white;
           font-size: 16px;
           font-family: "Oswald";
-          margin-left: 2vw;
+          margin-left: 0;
           margin-top: 0;
           margin-bottom: 0;
           padding-top: 0.8em;
+        }
+      }
+    }
+  }
+}
+.service-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 2vw 0;
+  .button-container {
+    .button {
+      text-transform: uppercase;
+      background-color: #d19f68;
+      color: #202020;
+      font-size: 14px;
+      font-family: "Oswald";
+      padding: 0.8em 4em;
+    }
+  }
+  .service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .service {
+      width: 30em;
+
+      ul {
+        list-style: none;
+        padding: 1vw;
+
+        li {
+          font-family: "Oswald";
+          font-size: 19px;
+          margin-bottom: 24px;
+          position: relative;
+          text-transform: uppercase;
+          overflow: hidden;
+          color: #202020;
+          .left-name {
+            position: relative;
+            text-transform: uppercase;
+            float: left;
+            &::before {
+              border-top: 2px dotted #010101;
+              bottom: 4px;
+              content: "";
+              left: 100%;
+              min-width: 200vh;
+              position: absolute;
+            }
+          }
+          .right-price {
+            float: right;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            background: #fff none repeat scroll 0 0;
+            color: #d19f68;
+          }
         }
       }
     }
