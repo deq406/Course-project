@@ -1,0 +1,308 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+header {
+  top: 0px;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  float: left;
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-menu {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  z-index: 900;
+  background-color: #202020;
+  margin-top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 24px;
+}
+
+.main-menu > li.menu-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.main-menu > li > a {
+  color: #ffff;
+  padding: 28px 10px;
+}
+
+.main-menu li a {
+  display: block;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+  font-size: 15px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-center {
+  background-color: #202020;
+}
+
+#site-navigation ul {
+  display: inline-block;
+}
+
+#site-navigation li {
+  float: left;
+}
+
+.header-logo-container {
+  width: 13%;
+  display: inline-block;
+}
+
+.header-logo {
+  margin: 0 15px;
+  padding-top: 5px;
+  display: block;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:-moz-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body .backimg-container {
+  z-index: 0;
+  width: 100%;
+  height: 20em;
+  visibility: inherit;
+}
+
+body .backimg-container > .backimg {
+  background-repeat: no-repeat;
+  background-image: url(../images/background-second.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .backimg-container > .backimg p {
+  color: white;
+  font-size: 32px;
+  font-family: "Oswald";
+  font-weight: 400;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+body .backimg-container > .backimg p + p {
+  color: white;
+  font-size: 16px;
+  font-family: "Oswald";
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.8em;
+}
+
+.aboutUs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutUs-container .time-table {
+  background-color: #d19f68;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 7vw;
+}
+
+.aboutUs-container .time-table .button-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1vw 0.4em 1vw 0;
+}
+
+.aboutUs-container .time-table .button-container div {
+  padding: 0.4em;
+  background-color: #202020;
+  color: #fff;
+  font-family: "Oswald";
+  font-size: 24px;
+}
+
+.aboutUs-container .time-table .header-time-table h4 {
+  color: #202020;
+  font-family: "Oswald";
+  font-size: 32px;
+}
+
+.aboutUs-container .time-table .date-list {
+  margin: 0;
+  width: 100%;
+}
+
+.aboutUs-container .time-table .date-list ul {
+  list-style: none;
+  padding: 0 2vw;
+}
+
+.aboutUs-container .time-table .date-list ul li {
+  border-bottom: 3px dotted #fff;
+  padding: 1vw 0;
+  text-align: right;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Oswald";
+}
+
+.aboutUs-container .time-table .date-list ul li:last-child {
+  border: 0;
+}
+
+.aboutUs-container .time-table .date-list ul li > span {
+  float: left;
+}
+
+.aboutUs-container div {
+  margin: 0 7vw;
+}
+
+.aboutUs-container .text-wrapper {
+  margin: 0;
+  padding: 7vw 0 7vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  width: 30%;
+}
+
+.aboutUs-container .text-wrapper p {
+  word-break: normal;
+  font-size: 15px;
+  padding-top: 3vh;
+  margin: 0;
+}
+
+.aboutUs-container .text-wrapper > h4 {
+  font-size: 35px;
+  font-family: "Oswald";
+  color: #d19f68;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutUs-container .text-wrapper > h4 + h4 {
+  padding: 39px 0 49px;
+  font-size: 75px;
+  color: #202020;
+  word-break: normal;
+  text-transform: uppercase;
+}
+
+.aboutUs-container .text-wrapper > h4 + h4 + h4 {
+  padding: 0;
+  font-size: 75px;
+  color: #202020;
+  word-break: normal;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=AboutUsStyle.css.map */

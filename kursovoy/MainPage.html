@@ -65,7 +65,12 @@
           </div>
         </div>
         <div class="image-block">
-          <img class="testJson" src="" alt="Картинка с бородой" />
+          <img
+            class="image-json"
+            src=""
+            alt="Картинка с бородой"
+            onclick="modalWindow(this)"
+          />
         </div>
       </div>
     </div>
@@ -73,7 +78,7 @@
       <div class="stiwrapper">
         <div class="second-img-block">
           <figure>
-            <img src="images/second-image.png" />
+            <img src="" class="image-json" onclick="modalWindow(this)" />
           </figure>
         </div>
         <div class="main-sti">
@@ -140,28 +145,44 @@
 
     <div class="grid-gallery">
       <div>
-        <figure><img src="images/grid-image1.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image2.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image3.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image4.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image5.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image6.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image7.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
       <div>
-        <figure><img src="images/grid-image8.png" /></figure>
+        <figure>
+          <img src="" class="image-json" onclick="modalWindow(this)" />
+        </figure>
       </div>
     </div>
     <footer>
@@ -182,6 +203,17 @@
         </div>
       </section>
     </footer>
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
     <script text="text/javascript" src="js/script.js"></script>
   </body>
 </html>

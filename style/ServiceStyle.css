@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+header {
+  top: 0px;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  float: left;
+  display: block;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-menu {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  z-index: 900;
+  background-color: #202020;
+  margin-top: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 24px;
+}
+
+.main-menu > li.menu-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.main-menu > li > a {
+  color: #ffff;
+  padding: 28px 10px;
+}
+
+.main-menu li a {
+  display: block;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 24px;
+  font-weight: 400;
+  color: #555555;
+  font-size: 15px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+  margin: 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-center {
+  background-color: #202020;
+}
+
+#site-navigation ul {
+  display: inline-block;
+}
+
+#site-navigation li {
+  float: left;
+}
+
+.header-logo-container {
+  width: 13%;
+  display: inline-block;
+}
+
+.header-logo {
+  margin: 0 15px;
+  padding-top: 5px;
+  display: block;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:-moz-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body .backimg-container {
+  z-index: 0;
+  width: 100%;
+  height: 20em;
+  visibility: inherit;
+}
+
+body .backimg-container > .backimg {
+  background-repeat: no-repeat;
+  background-image: url(../images/background-second.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .backimg-container > .backimg p {
+  color: white;
+  font-size: 32px;
+  font-family: "Oswald";
+  font-weight: 400;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+body .backimg-container > .backimg p + p {
+  color: white;
+  font-size: 16px;
+  font-family: "Oswald";
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.8em;
+}
+
+.service-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2vw 0;
+}
+
+.service-container .button-container .button {
+  text-transform: uppercase;
+  background-color: #d19f68;
+  color: #202020;
+  font-size: 14px;
+  font-family: "Oswald";
+  padding: 0.8em 4em;
+}
+
+.service-container .service-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-container .service-wrapper .service {
+  width: 30em;
+}
+
+.service-container .service-wrapper .service ul {
+  list-style: none;
+  padding: 1vw;
+}
+
+.service-container .service-wrapper .service ul li {
+  font-family: "Oswald";
+  font-size: 19px;
+  margin-bottom: 24px;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  color: #202020;
+}
+
+.service-container .service-wrapper .service ul li .left-name {
+  position: relative;
+  text-transform: uppercase;
+  float: left;
+}
+
+.service-container .service-wrapper .service ul li .left-name::before {
+  border-top: 2px dotted #010101;
+  bottom: 4px;
+  content: "";
+  left: 100%;
+  min-width: 200vh;
+  position: absolute;
+}
+
+.service-container .service-wrapper .service ul li .right-price {
+  float: right;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #fff none repeat scroll 0 0;
+  color: #d19f68;
+}
+/*# sourceMappingURL=ServiceStyle.css.map */
