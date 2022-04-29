@@ -380,29 +380,51 @@ p {
   display: block;
 }
 
-.footer-container {
+footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-image: url(../images/bg-footer.jpeg);
+}
+
+footer .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  text-align: center;
-  float: left;
   position: relative;
-  background-color: #202020;
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
 }
 
-.footer-container .footer-title {
+footer .footer-container .footer-block {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5vw 8vw;
+  padding-left: 2vw;
 }
 
-.footer-container .footer-title article {
+footer .footer-container .footer-block .footer-header {
   font-family: "Oswald";
   color: #ffff;
   font-size: 20px;
-  padding-top: 5vh;
+  margin: 0;
+  text-align: center;
 }
 /*# sourceMappingURL=Maincss.css.map */
