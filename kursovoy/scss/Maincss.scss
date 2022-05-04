@@ -184,10 +184,16 @@ p {
 }
 .box-text {
   padding: 39px 0 49px;
+  @media screen and (max-width: 320px) {
+    padding: 20px 0 29px;
+  }
 }
 .box-text > p {
   width: 500px;
   word-break: break-all;
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
 }
 .image-block {
   width: 40em;
@@ -196,6 +202,10 @@ p {
   background-color: #ffae57;
   z-index: 25;
   /*box-shadow: #202020 5px 5px 5px 5px;*/
+  @media screen and (max-width: 320px) {
+    width: 320px;
+    margin-left: 1em;
+  }
 }
 .image-block > img {
   width: 100%;
@@ -240,6 +250,11 @@ p {
           grid-template-columns: 40vw;
           grid-template-rows: repeat(6, 15vh);
         }
+        @media screen and (max-width: 320px) {
+          gap: 15 vh;
+          grid-template-columns: 100vw;
+          grid-template-rows: repeat(6, 15vh);
+        }
         .sec-box-text-item1 {
           h4 {
             font-size: 32px;
@@ -273,6 +288,11 @@ p {
     grid-template-columns: repeat(2, 384px);
     grid-template-rows: repeat(4, 299.38px);
   }
+  @media screen and (max-width: 320px) {
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(8, 299.38px);
+    gap: 0;
+  }
   div {
     width: 100%;
     height: 100%;
@@ -302,6 +322,9 @@ footer {
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 320px) {
+      flex-direction: column;
+    }
 
     .footer-block {
       width: 100%;
@@ -312,6 +335,10 @@ footer {
       flex-direction: column;
       margin: 5vw 3vw 5vw 8vw;
       padding-left: 2vw;
+      @media screen and (max-width: 320px) {
+        margin: 0;
+        padding: 0;
+      }
       .second-footer-list {
         padding: 0;
         margin: 0;
@@ -323,6 +350,7 @@ footer {
           font-size: 19px;
           border-bottom: 3px dotted;
           padding: 1vw 0;
+
           &:last-child {
             border: 0;
           }

@@ -46,5 +46,117 @@
         <p>Главная / Новости</p>
       </div>
     </div>
+    <div class="news-container">
+      <div class="slider-container">
+        <div class="slider">
+          <!-- Первый слайд -->
+          <div class="item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/field.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Второй слайд -->
+          <div class="item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/rose.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Третий слайд -->
+          <div class="item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/leaf.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Кнопки-стрелочки -->
+          <a class="previous" id="firstPrev" onclick="previousSlide(this)"
+            >&#10094;</a
+          >
+          <a class="next" id="firstNext" onclick="nextSlide(this)">&#10095;</a>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider">
+          <!-- Первый слайд -->
+          <div class="second-slider-item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/field.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Второй слайд -->
+          <div class="second-slider-item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/rose.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Третий слайд -->
+          <div class="second-slider-item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/leaf.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Кнопки-стрелочки -->
+          <a class="previous" id="secondPrev" onclick="previousSlide(this)"
+            >&#10094;</a
+          >
+          <a class="next" id="secondNext" onclick="nextSlide(this)">&#10095;</a>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider">
+          <!-- Первый слайд -->
+          <div class="third-slider-item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/field.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Второй слайд -->
+          <div class="third-slider-item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/rose.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Третий слайд -->
+          <div class="third-slider-item">
+            <img
+              src="https://media.tproger.ru/uploads/2020/07/leaf.jpg"
+              onclick="modalWindow(this)"
+            />
+          </div>
+
+          <!-- Кнопки-стрелочки -->
+          <a class="previous" id="thirdPrev" onclick="previousSlide(this)"
+            >&#10094;</a
+          >
+          <a class="next" id="thirdNext" onclick="nextSlide(this)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01" />
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+    <script src="js/news.js"></script>
   </body>
 </html>
