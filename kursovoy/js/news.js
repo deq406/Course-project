@@ -33,9 +33,9 @@ function nextSlide(item) {
 
 /* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
 function previousSlide(item) {
-  if (item.id === "secondNext") {
+  if (item.id === "secondPrev") {
     showSlides((secondSlideIndex -= 1), 2);
-  } else if (item.id === "thirdNext") {
+  } else if (item.id === "thirdPrev") {
     showSlides((thirdSlideIndex -= 1), 3);
   } else {
     showSlides((slideIndex -= 1), 1);
@@ -94,3 +94,16 @@ function showSlides(n, id) {
     slides[thirdSlideIndex - 1].style.display = "block";
   }
 }
+(() => {
+  window.onload = () => {
+    let header__burger = document.querySelector(".header-burger");
+    let header__menu = document.querySelector(".main-navigation");
+    console.log(header__burger, header__menu);
+    let body = document.querySelector("body");
+    header__burger.addEventListener("click", (e) => {
+      header__burger.classList.toggle("active");
+      header__menu.classList.toggle("active");
+      body.classList.toggle("lock");
+    });
+  };
+})();
