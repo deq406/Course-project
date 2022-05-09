@@ -20,7 +20,7 @@ function modalWindow(e) {
   var captionText = document.getElementById("caption");
   modal.style.display = "block";
   modalImg.src = e.src;
-  captionText.innerHTML = e.alt;
+
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function () {
     modal.style.display = "none";
@@ -29,7 +29,8 @@ function modalWindow(e) {
 /*const ApiToken = "https://run.mocky.io/v3/46f6c3a1-c444-437a-bd36-cd7a77364b93";
 const api = "https://run.mocky.io/v3/828b6f45-f5f2-4981-83a6-fc12e8d97870";
 const dai = "https://run.mocky.io/v3/2258f670-874c-4a56-89cc-dfee1895a5bd";*/
-const apiToken = "https://run.mocky.io/v3/3038094f-7d8a-4509-aa02-5842903e75ef";
+//const apiToken = "https://run.mocky.io/v3/3038094f-7d8a-4509-aa02-5842903e75ef";
+const apiToken = "https://run.mocky.io/v3/ab75dc03-da59-448d-b941-19cc0b04d09d";
 fetch(apiToken)
   .then(function (response) {
     return response.json();

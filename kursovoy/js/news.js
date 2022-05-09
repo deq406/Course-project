@@ -5,7 +5,7 @@ function modalWindow(e) {
   var captionText = document.getElementById("caption");
   modal.style.display = "block";
   modalImg.src = e.src;
-  captionText.innerHTML = e.alt;
+
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function () {
     modal.style.display = "none";

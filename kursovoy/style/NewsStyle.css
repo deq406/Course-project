@@ -209,7 +209,7 @@ body .backimg-container > .backimg p + p {
 
 @media screen and (max-width: 850px) {
   .news-container .slider-container .slider {
-    margin-bottom: 10vh;
+    margin-bottom: 14vh;
   }
 }
 

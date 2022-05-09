@@ -1,4 +1,4 @@
-const apiToken = "https://run.mocky.io/v3/3038094f-7d8a-4509-aa02-5842903e75ef";
+const apiToken = "https://run.mocky.io/v3/ab75dc03-da59-448d-b941-19cc0b04d09d";
 fetch(apiToken)
   .then(function (response) {
     return response.json();
@@ -20,7 +20,7 @@ function modalWindow(e) {
   var captionText = document.getElementById("caption");
   modal.style.display = "block";
   modalImg.src = e.src;
-  captionText.innerHTML = e.alt;
+
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function () {
     modal.style.display = "none";
