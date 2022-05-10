@@ -60,6 +60,24 @@ html {
   letter-spacing: 1px;
 }
 
+.main-menu li a:hover {
+  color: #d19f68;
+}
+
+.main-menu li a:hover::after {
+  width: 100%;
+}
+
+.main-menu li a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #d19f68;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 body {
   font-family: "Open Sans";
   line-height: 24px;
