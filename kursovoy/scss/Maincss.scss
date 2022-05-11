@@ -178,7 +178,7 @@ body .backimg-container {
     flex-direction: column;
   }
   @media screen and (max-width: 560px) {
-    width: 320px;
+    width: 100vw;
   }
   @media screen and (max-width: 1190px) {
     flex-direction: column;
@@ -195,13 +195,13 @@ body .backimg-container {
   @media screen and (max-width: 560px) {
     width: 100%;
     height: 560px;
-    margin-left: 1em;
+    margin: 0;
   }
   @media screen and (max-width: 700px) {
-    margin-left: 1em;
+    margin: 0;
   }
   @media screen and (max-width: 1439px) {
-    margin-left: 1em;
+    margin-left: 0;
   }
 }
 .box-title {
@@ -209,7 +209,7 @@ body .backimg-container {
   position: relative;
   line-height: 24px;
   @media screen and (max-width: 560px) {
-    width: 300px;
+    width: 100vw;
   }
 }
 .box-title > h4 {
@@ -280,7 +280,7 @@ p {
     .second-img-block {
       @media screen and (max-width: 560px) {
         width: 100vw;
-        height: 1000px;
+        height: 700px;
         margin: 0;
       }
       figure {
@@ -342,6 +342,7 @@ p {
           gap: 15vh;
           grid-template-columns: 300px;
           grid-template-rows: repeat(6, 15vh);
+          margin-bottom: 20vh;
         }
         .sec-box-text-item1 {
           h4 {
