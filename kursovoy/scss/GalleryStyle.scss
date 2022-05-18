@@ -156,10 +156,11 @@ body {
     }
   }
 }
+
 .grid-gallery {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, 360px);
+  grid-template-columns: repeat(4, 25vw);
   grid-template-rows: repeat(3, 299.38px);
   padding: 20vh 0;
   @media screen and (max-width: 768px) {

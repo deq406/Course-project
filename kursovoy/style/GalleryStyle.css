@@ -187,8 +187,8 @@ body .backimg-container > .backimg p + p {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (360px)[4];
-      grid-template-columns: repeat(4, 360px);
+  -ms-grid-columns: (25vw)[4];
+      grid-template-columns: repeat(4, 25vw);
   -ms-grid-rows: (299.38px)[3];
       grid-template-rows: repeat(3, 299.38px);
   padding: 20vh 0;

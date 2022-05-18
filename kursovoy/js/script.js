@@ -25,6 +25,11 @@ function modalWindow(e) {
   span.onclick = function () {
     modal.style.display = "none";
   };
+  document.addEventListener("click", (e) => {
+    if (e.target == document.querySelector(".modal")) {
+      modal.style.display = "none";
+    }
+  });
 }
 /*const ApiToken = "https://run.mocky.io/v3/46f6c3a1-c444-437a-bd36-cd7a77364b93";
 const api = "https://run.mocky.io/v3/828b6f45-f5f2-4981-83a6-fc12e8d97870";

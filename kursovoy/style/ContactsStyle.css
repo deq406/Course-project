@@ -238,6 +238,14 @@ body .backimg-container > .backimg p + p {
   color: #202020;
   font-family: "Oswald";
   font-size: 16px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.form-container .form .submit-button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 footer {

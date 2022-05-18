@@ -94,7 +94,7 @@
           </ul>
         </div>
         <div class="button-container">
-          <div>Запись онлайн</div>
+          <div data-open="modal1">Запись онлайн</div>
         </div>
       </div>
     </div>
@@ -172,6 +172,33 @@
         </div>
       </section>
     </footer>
-    <script src="js/contacts.js"></script>
+    <div class="modal" id="modal1">
+      <div class="modal-dialog">
+        <div class="close-modal" aria-label="close modal" data-close>✕</div>
+
+        <section class="modal-content">
+          <form class="modal-form">
+            <p class="input-text-wrapper">
+              <input type="text" required placeholder="Ваше имя" />
+            </p>
+            <p class="input-text-wrapper">
+              <input type="text" required placeholder="Ваш email" />
+            </p>
+
+            <p class="input-text-wrapper">
+              <input type="text" required placeholder="Номер телефона" />
+            </p>
+            <p class="input-text-wrapper">
+              <input type="date" id="dayToday" required />
+            </p>
+            <p>
+              <input type="submit" value="Отправить" class="submit-button" />
+            </p>
+          </form>
+        </section>
+        <footer class="modal-footer"></footer>
+      </div>
+    </div>
+    <script src="js/service.js"></script>
   </body>
 </html>

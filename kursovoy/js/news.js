@@ -10,6 +10,11 @@ function modalWindow(e) {
   span.onclick = function () {
     modal.style.display = "none";
   };
+  document.addEventListener("click", (e) => {
+    if (e.target == document.querySelector(".modal")) {
+      modal.style.display = "none";
+    }
+  });
 }
 /* Устанавливаем стартовый индекс слайда по умолчанию: */
 let slideIndex = 1;

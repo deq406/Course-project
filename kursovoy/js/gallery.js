@@ -25,6 +25,11 @@ function modalWindow(e) {
   span.onclick = function () {
     modal.style.display = "none";
   };
+  document.addEventListener("click", (e) => {
+    if (e.target == document.querySelector(".modal")) {
+      modal.style.display = "none";
+    }
+  });
 }
 (() => {
   window.onload = () => {

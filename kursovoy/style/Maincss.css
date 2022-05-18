@@ -774,7 +774,7 @@ footer .footer-container .footer-block .footer-header {
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
+  margin: auto auto;
   display: block;
   width: 80%;
   max-width: 700px;
@@ -782,7 +782,7 @@ footer .footer-container .footer-block .footer-header {
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-  margin: auto;
+  margin: auto auto;
   display: block;
   width: 80%;
   max-width: 700px;
